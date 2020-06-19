@@ -1,0 +1,290 @@
+/*zone with welcome info*/
+
+.welcome_grid
+{
+    width: calc(100vw);
+    height: calc(70vh);
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: solid 1vh var(--beaver);
+    border-bottom: solid 1vh var(--bole);
+}
+
+.welcome_grid>div
+{
+    overflow: hidden;
+
+    padding: 2rem;
+    padding-bottom: unset;
+    color: var(--dark);
+}
+
+.welcome_grid h2
+{
+    display: inline;
+    font-size: 2rem;
+}
+
+#welcome_right h2
+{
+    position: relative;
+    left: 20%;
+}
+
+#welcome_left
+{
+    padding-top: 40%;
+
+    background-color: var(--bole);
+}
+
+#welcome_middle
+{
+    padding-top: 20%;
+
+    background-color: var(--beaver);
+}
+
+#welcome_right
+{   
+    background-color: var(--pink);
+}
+
+
+
+
+
+/*login area*/
+
+#log_in_container
+{
+    display: grid;
+
+    grid-template-rows: repeat(5, 1fr);
+
+    height: 55vh;
+}
+
+#log_in_container>div
+{
+    border: solid 1px transparent;
+}
+
+
+
+
+
+#log_in_container input[type="checkbox"]
+{
+    display: none;
+}
+
+#log_in_container input[type="checkbox"] + label
+{
+    /*use !important because labels are already styled*/
+    display: block;
+
+    position: relative;
+    top: 10%;
+
+    font-size: 1.2rem !important;
+    color: var(--bole) !important;
+
+    transition-duration: 200ms;
+}
+
+#log_in_container input[type="checkbox"] + label:hover
+{
+    color: var(--dark) !important;
+    font-size: 1.3rem !important;
+
+    transition-duration: 200ms;
+}
+
+#log_in_container input[type="checkbox"] + label:hover::before
+{
+    border-color: var(--dark);
+    transform: translateY(-10%);
+    
+    transition-duration: 200ms;
+}
+
+#log_in_container input[type="checkbox"]:checked + label
+{
+    color: var(--dark) !important;
+
+    transition-duration: 200ms;
+}
+
+#log_in_container input[type="checkbox"] + label::before
+{
+    content: '';
+
+    display: inline-block;
+    transform: scale(1);
+
+    position: relative;
+    vertical-align: -15%;
+    margin-right: 5%;
+
+    width: 1rem;
+    height: 1rem;
+
+    background-color: transparent;
+
+    border: solid .2rem var(--bole);
+    border-radius: 30%;
+
+
+    transition-duration: 200ms;
+}
+
+#log_in_container input[type="checkbox"]:checked + label::before
+{
+    background-color: var(--beaver);
+    border-color: var(--dark);
+    border-radius: 40%;
+
+    transform: scale(1.2);
+
+    transition-duration: 200ms;
+}
+
+
+
+
+
+#log_in_container input
+{
+    margin-left: 10%;
+    width: 80%;
+
+    font-size: 1.5rem;
+    color: var(--dark);
+
+    border-bottom: solid .2rem var(--bole);
+    
+    transition-duration: 500ms;
+}
+
+#log_in_container input::selection
+{
+    background-color: var(--dark);
+    color: var(--pink);
+}
+
+#log_in_container input:hover,
+#log_in_container input:focus,
+#log_in_container input:not(:placeholder-shown)
+{
+    border-color: var(--dark);
+
+    transition-duration: 500ms;
+}
+
+#log_in_container input::placeholder
+{
+    color: transparent;
+}
+
+#log_in_container label
+{
+    /*border: solid 1px blue;*/
+    margin-left: 10%;
+    width: 80%;
+
+    font-size: 1.5rem;
+    color: var(--bole);
+
+    display: block;
+    transform: translateY(-105%);
+
+    transition-duration: 200ms;
+}
+
+#log_in_container input:hover + label,
+#log_in_container input:focus + label,
+#log_in_container input:not(:placeholder-shown) + label
+{
+    font-size: 1rem;
+    color: var(--dark);
+
+    transform: translateY(0%);
+
+    transition-duration: 200ms;
+}
+
+
+
+
+
+#log_in_container input[type="submit"]
+{
+    position: relative;
+    top: 10%;
+
+    width: 80%;
+    height: 80%;
+
+    font-size: 1.5rem;
+    color: var(--bole);
+
+    border: solid .2rem var(--bole);
+    border-radius: .75rem;
+}
+
+#log_in_container input[type="submit"] + label
+{
+    display: block;
+
+    position: relative;
+    bottom: 40%;
+    
+    width: 78%;
+    height: 80%;
+
+    font-size: 1.5rem;
+    color: var(--dark);
+    text-align: center;
+
+    background-color: var(--pink);
+
+    border: solid .3rem var(--dark);
+    border-radius: .75rem;
+
+    clip-path: circle(0% at 50% 50%);
+
+    transition-duration: 300ms;
+}
+
+#log_in_container input[type="submit"]:hover
+{
+    color: transparent;
+    border-color: transparent;
+    background-color: transparent;
+
+    transition-delay: 300ms;
+    transition-duration: 0ms;
+}
+
+#log_in_container input[type="submit"]:hover + label
+{
+    letter-spacing: .2rem;
+
+    clip-path: circle(70% at 50% 50%);
+
+    transition-duration: 300ms;
+}
+
+#log_in_container input[type="submit"]:active + label
+{
+    transform: scale(1.1);
+    background-color: var(--beaver);
+
+    transition-duration: 100ms;
+}

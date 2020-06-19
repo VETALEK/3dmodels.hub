@@ -1,0 +1,147 @@
+/*Menu template*/
+/*
+    <!--Top menu-->
+    <div class="menu_grid">
+        <!--Search section-->
+        <div class="menu_search">
+            <input type="text">
+            <div class="menu_button">SEARCH</div>
+        </div>
+        <!--Link buttons-->
+        <div class="menu_button">
+            <a href="./models.html">MODELS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./users.html">USERS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./index.html">HOME</a>
+        </div>
+    <!---->
+    </div>
+    <!---->
+*/
+
+.menu_grid
+{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    width:  100vw;
+    height: 8vh;
+
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+}
+
+.menu_grid>div
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    font-size: 1.6rem;
+
+    background-color: var(--dark);
+    color: var(--light);
+
+    border-top:     solid .3rem var(--dark);
+    border-bottom:  solid .3rem var(--dark);
+
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+
+
+.menu_button,
+.menu_button a
+{   
+    font-size: 1.6rem;
+    letter-spacing: normal;
+
+    background-color: var(--dark);
+    color: var(--light);
+
+    text-decoration: none;
+
+    transition-duration: 100ms;
+}
+
+.menu_button:hover,
+.menu_button:hover a,
+.menu_button a:hover
+{
+    font-size: 2rem;
+    letter-spacing: .3rem;
+
+    background-color: var(--light);
+    color: var(--dark);
+
+    transition-duration: 150ms;
+}
+
+
+
+
+
+.menu_search
+{
+    width: 100%;
+    left:0;
+
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    
+    transition-duration: 200ms;
+}
+
+.menu_search:hover
+{
+    grid-template-columns: 1fr 1fr;
+
+    transition-duration: 300ms;
+}
+
+.menu_search>input
+{
+    width: 90%;
+
+    font-size: 1.6rem;
+
+    color: transparent;
+    border-bottom: solid .1rem transparent;
+
+    transition-duration: 100ms;
+}
+
+.menu_search>input::selection
+{
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.menu_search:hover>input
+{
+    color: var(--light);
+    border-bottom: solid .1rem var(--light);
+
+    transition-duration: 500ms;
+}
+
+.menu_search>input:hover
+{
+    font-size: 1.8rem;
+
+    transition-duration: 100ms;
+}
+
+.menu_search>.menu_button
+{
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+}

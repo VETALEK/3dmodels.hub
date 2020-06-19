@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DMHub</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/menu.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+
+    <link href="./css/users.css" rel="stylesheet">
+    
+    <script>
+        function show(cl)
+        {
+            var el = document.getElementsByClassName(cl)[0];
+            el.style.animation = "show_me 300ms linear normal forwards";
+        }
+        function hide(cl)
+        {
+            var el = document.getElementsByClassName(cl)[0];
+            el.style.animation = "hide_me 300ms linear normal forwards";
+        }
+    </script>
+
+</head>
+<body>
+
+    <!--Top menu-->
+    <div class="menu_grid">
+        <!--Search section-->
+        <div class="menu_search">
+            <input type="text">
+            <div class="menu_button">SEARCH</div>
+        </div>
+        <!--Link buttons-->
+        <div class="menu_button">
+            <a href="./models.html">MODELS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./users.html">USERS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./index.html">HOME</a>
+        </div>
+    <!---->
+    </div>
+    <!---->
+    
+    <div class="users_grid">
+        <div>
+            <img src="./images/avatar_placeholder.jpg" alt="image is not loaded">
+            <div class="username" onclick="show('user_big');">@UserNickName</div>
+            <div class="userstatus">offline</div>
+        </div>
+        <div>
+            <img src="./images/avatar_placeholder.jpg" alt="">
+            <div class="username" onclick="show('user_big');">@UserNickName</div>
+            <div class="userstatus">offline</div>
+        </div>
+        <div>
+            <img src="./images/avatar_placeholder.jpg" alt="">
+            <div class="username" onclick="show('user_big');">@UserNickName</div>
+            <div class="userstatus">offline</div>
+        </div>
+    </div>
+
+    <div class="user_big">
+        <div class="user_big_image">
+            <img src="./images/avatar_placeholder.jpg" alt="image is not loaded">
+        </div>
+        <div class="username_big">@UserNickName</div>
+        <div class="userstatus_big">offline</div>
+        <div class="models_list_element">Models from this author:</div>
+        <a href="./models.html" class="models_list_element models_list_model">#1 Model name ...</a>
+        <div class="user_big_back" onclick="hide('user_big');">
+            <input type="submit" value="Go back">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <!---->
+        <div>
+            <a href="./models.html">MODELS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./users.html">USERS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./index.html">HOME</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://gmail.com">
+            <img src="https://image.flaticon.com/icons/svg/893/893257.svg">
+            </a>
+            <a href="https://gmail.com">FAQ and support (GMail)</a>
+        </div>
+        <!---->
+        <div class="footer_block_triple">
+            <a href="./index.html">© 2020-2021 Avdeenko Vitaliy CS-17 ALL RIGHTS RESERVED (EULA)</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://pages.github.com">
+            <img src="https://image.flaticon.com/icons/svg/733/733553.svg">
+            </a>
+            <a href="https://pages.github.com">Hosted with GITHub Pages (pages.github.com)</a>
+        </div>
+        <!---->
+    </footer>
+    <!---->
+    
+</body>
+</html>

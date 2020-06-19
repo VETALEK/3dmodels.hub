@@ -1,0 +1,64 @@
+/*variables*/
+
+:root
+{
+    --dark:     #07090F;
+    --light:    #CFD4C5;
+    --bole:     #774936;
+    --beaver:   #B49082;
+    --pink:     #D6C3C9;
+}
+
+
+
+
+
+/*commmon tags*/
+
+body
+{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--light);
+
+    overflow-x: hidden;
+
+    user-select: none;
+}
+
+input
+{
+    font-family: 'Quicksand', sans-serif;
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+#content_placeholder
+{
+    width: 50%;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    padding: 2%;
+
+    display: block;
+    transform: translate(-50%, -50%);
+
+    font-size: 5rem;
+    text-align: center;
+    color: var(--light);
+
+    background-color: var(--bole);
+
+    border-radius: 5rem;
+}

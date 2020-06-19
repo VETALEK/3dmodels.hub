@@ -1,0 +1,163 @@
+.models_menu
+{
+    /* position: sticky; */
+    position: fixed;
+    top: 8vh;
+    z-index: 99;
+
+    width: 100vw;
+    height: 10vh;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr) 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    /* justify-items: center;
+    align-items: center; */
+    
+    border-bottom: solid .3rem var(--bole);
+
+    color: var(--dark);
+    background-color: var(--beaver);
+
+    transition-duration: 250ms;
+}
+
+.models_menu:hover
+{
+    height: 12vh;
+
+    transition-duration: 500sm;
+}
+
+.models_menu>div
+{
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+
+    /* border: solid 1px var(--bole); */
+}
+
+
+
+
+
+.models_menu input[type="checkbox"]
+{
+    display: none;
+}
+
+.models_menu input[type="checkbox"] + label
+{
+    color: var(--bole);
+
+    transition-duration: 250ms;
+}
+
+.models_menu input[type="checkbox"] + label:hover
+{
+    font-size: 1.2rem;
+    color: var(--beaver);
+    padding: 0 .5rem 0 .5rem;
+
+    border-radius: .5rem;
+    background-color: var(--bole);
+
+    transition-duration: 250ms;
+}
+
+.models_menu input[type="checkbox"]:checked + label
+{
+    font-size: 1.2rem;
+    color: var(--beaver);
+    padding: 0 .5rem 0 .5rem;
+    
+    border-radius: .5rem;
+    background-color: var(--dark);
+
+    transition-duration: 250ms;
+}
+
+
+
+
+
+.models_menu_search
+{
+    grid-row: 1/3;
+    grid-column: 8/9;
+}
+
+.models_menu_search input
+{
+    font-size: 1.2rem;
+    color: var(--bole);
+
+    width: 80%;
+    border-bottom: solid .2rem var(--bole);
+
+    transition-duration: 250ms;
+}
+
+.models_menu_search input:hover
+{
+    font-size: 1.5rem;
+    color: var(--dark);
+
+    width: 90%;
+    border-color: var(--dark);
+
+    transition-duration: 500ms;
+}
+
+.models_menu_search input:focus,
+.models_menu_search input:not(:placeholder-shown)
+{
+    color: var(--dark);
+    border-color: var(--dark);
+
+    transition-duration: 500ms;
+}
+
+.models_menu_search input::placeholder
+{
+    color: var(--bole);
+
+    transition-duration: 250ms;
+}
+
+.models_menu_search input:hover::placeholder
+{
+    color: var(--dark);
+
+    transition-duration: 500ms;
+}
+
+
+
+
+
+.models_menu_button
+{
+    grid-row: 1/3;
+    grid-column: 9/10;
+
+    font-size: 1.5rem;
+    color: var(--bole);
+
+    border-left: solid .3rem var(--bole);
+
+    transition-duration: 250ms;
+}
+
+.models_menu_button:hover
+{
+    font-size: 1.8rem;
+    color: var(--beaver);
+
+    background-color: var(--bole);
+
+    transition-duration: 500ms;
+}

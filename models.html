@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DMHub</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/menu.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+
+    <link href="./css/models_menu.css" rel="stylesheet">
+    <link href="./css/models.css" rel="stylesheet">
+    
+    <script>
+        function show(cl)
+        {
+            var el = document.getElementsByClassName(cl)[0];
+            el.style.animation = "show_me 300ms linear normal forwards";
+        }
+        function hide(cl)
+        {
+            var el = document.getElementsByClassName(cl)[0];
+            el.style.animation = "hide_me 300ms linear normal forwards";
+        }
+    </script>
+
+</head>
+<body>
+
+    <!--Top menu-->
+    <div class="menu_grid">
+        <!--Search section-->
+        <div class="menu_search">
+            <input type="text">
+            <div class="menu_button">SEARCH</div>
+        </div>
+        <!--Link buttons-->
+        <div class="menu_button">
+            <a href="./models.html">MODELS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./users.html">USERS</a>
+        </div>
+        <div class="menu_button">
+            <a href="./index.html">HOME</a>
+        </div>
+    <!---->
+    </div>
+    <!---->
+    
+    <!--Search menu-->
+    <form class="models_menu">
+        <!--search tags-->
+        <div>
+            <input type="checkbox" id="characters">
+            <label for="characters">#characters</label>
+        </div>
+        <div>
+            <input type="checkbox" id="animals">
+            <label for="animals">#animals</label>
+        </div>
+        <div>
+            <input type="checkbox" id="plants">
+            <label for="plants">#plants</label>
+        </div>
+        <div>
+            <input type="checkbox" id="architecture">
+            <label for="architecture">#architecture</label>
+        </div>
+        <div>
+            <input type="checkbox" id="furniture">
+            <label for="furniture">#furniture</label>
+        </div>
+        <div>
+            <input type="checkbox" id="vechicles">
+            <label for="vechicles">#vechicles</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mechanisms">
+            <label for="mechanisms">#mechanisms</label>
+        </div>
+        <!---->
+        <!--search field-->
+        <div class="models_menu_search">
+            <input type="text" id="search input" placeholder="#search">
+        </div>
+        <!---->
+        <!--search button-->
+        <div class="models_menu_button">Search</div>
+        <!---->
+        <!--search tags-->
+        <div>
+            <input type="checkbox" id="blender">
+            <label for="blender">#blender</label>
+        </div>
+        <div>
+            <input type="checkbox" id="cinema4D">
+            <label for="cinema4D">#cinema4D</label>
+        </div>
+        <div>
+            <input type="checkbox" id="3dsMax">
+            <label for="3dsMax">#3dsMax</label>
+        </div>
+        <div>
+            <input type="checkbox" id="maya">
+            <label for="maya">#maya</label>
+        </div>
+        <div>
+            <input type="checkbox" id="fbx">
+            <label for="fbx">#fbx</label>
+        </div>
+        <div>
+            <input type="checkbox" id="obj">
+            <label for="obj">#obj</label>
+        </div>
+        <div>
+            <input type="checkbox" id="animated">
+            <label for="animated">#animated</label>
+        </div>
+        <!---->
+    </form>
+    <!---->
+
+    <!--Models grid-->
+    <div class="models_grid">
+        <!--  -->
+        <div>
+            <div class="model_preview">
+                <iframe frameborder="0" width="95%" height="95%" src="preview_example.html"></iframe>
+            </div>
+            <div class="model_description">
+                <span class="model_name">Model name</span>
+                <a href="./users.html" class="model_author">
+                    AuthorNickname
+                </a>
+                <a href="#" class="model_more" onclick="show('model_big');">View more</a>
+            </div>
+            <div class="model_tags">
+                <a href="">
+                    <span>long_tag1</span>
+                </a>
+                <a href="">
+                    <span>tag2</span>
+                </a>
+                <a href="">
+                    <span>tag3</span>
+                </a>
+                <a href="">
+                    <span>tag4</span>
+                </a>
+                <a href="">
+                    <span>long_tag5</span>
+                </a>
+                <a href="">
+                    <span>long_tag6</span>
+                </a>
+            </div>
+        </div>
+        <!--  -->
+        <div>
+            <div class="model_preview">
+                <iframe frameborder="0" width="95%" height="95%" src="preview_example.html"></iframe>
+            </div>
+            <div class="model_description">
+                <span class="model_name">Model name</span>
+                <a href="./users.html" class="model_author">
+                    AuthorNickname
+                </a>
+                <a href="#" class="model_more" onclick="show('model_big');">View more</a>
+            </div>
+            <div class="model_tags">
+                <a href="">
+                    <span>long_tag1</span>
+                </a>
+                <a href="">
+                    <span>tag2</span>
+                </a>
+                <a href="">
+                    <span>tag3</span>
+                </a>
+                <a href="">
+                    <span>tag4</span>
+                </a>
+                <a href="">
+                    <span>long_tag5</span>
+                </a>
+                <a href="">
+                    <span>long_tag6</span>
+                </a>
+            </div>
+        </div>
+        <!--  -->
+        <div>
+            <div class="model_preview">
+                <iframe frameborder="0" width="95%" height="95%" src="preview_example.html"></iframe>
+            </div>
+            <div class="model_description">
+                <span class="model_name">Model name</span>
+                <a href="./users.html" class="model_author">
+                    AuthorNickname
+                </a>
+                <a href="#" class="model_more" onclick="show('model_big');">View more</a>
+            </div>
+            <div class="model_tags">
+                <a href="">
+                    <span>long_tag1</span>
+                </a>
+                <a href="">
+                    <span>tag2</span>
+                </a>
+                <a href="">
+                    <span>tag3</span>
+                </a>
+                <a href="">
+                    <span>tag4</span>
+                </a>
+                <a href="">
+                    <span>long_tag5</span>
+                </a>
+                <a href="">
+                    <span>long_tag6</span>
+                </a>
+            </div>
+        </div>
+        <!--  -->
+        <div>
+            <div class="model_preview">
+                <iframe frameborder="0" width="95%" height="95%" src="preview_example.html"></iframe>
+            </div>
+            <div class="model_description">
+                <span class="model_name">Model name</span>
+                <a href="./users.html" class="model_author">
+                    AuthorNickname
+                </a>
+                <a href="#" class="model_more" onclick="show('model_big');">View more</a>
+            </div>
+            <div class="model_tags">
+                <a href="">
+                    <span>long_tag1</span>
+                </a>
+                <a href="">
+                    <span>tag2</span>
+                </a>
+                <a href="">
+                    <span>tag3</span>
+                </a>
+                <a href="">
+                    <span>tag4</span>
+                </a>
+                <a href="">
+                    <span>long_tag5</span>
+                </a>
+                <a href="">
+                    <span>long_tag6</span>
+                </a>
+            </div>
+        </div>
+        <!--  -->
+    </div>
+    <!---->
+
+    <!--Model info in big window-->
+    <div class="model_big">
+        <div class="model_big_preview">
+            <iframe frameborder="0" width="95%" height="95%" src="preview_example.html"></iframe>
+        </div>
+        <div class="model_big_button">
+            <a href="./Model name(from 3dmodels.hub).zip" download>
+                <input type="submit" value="Download .zip">
+            </a>
+        </div>
+        <div class="model_big_button">
+            <input type="submit" value="Go back" onclick="hide('model_big');">
+        </div>
+    </div>
+    <!---->
+    
+    <!--Footer-->
+    <footer>
+        <!---->
+        <div>
+            <a href="./models.html">MODELS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./users.html">USERS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./index.html">HOME</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://gmail.com">
+            <img src="https://image.flaticon.com/icons/svg/893/893257.svg">
+            </a>
+            <a href="https://gmail.com">FAQ and support (GMail)</a>
+        </div>
+        <!---->
+        <div class="footer_block_triple">
+            <a href="./index.html">© 2020-2021 Avdeenko Vitaliy CS-17 ALL RIGHTS RESERVED (EULA)</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://pages.github.com">
+            <img src="https://image.flaticon.com/icons/svg/733/733553.svg">
+            </a>
+            <a href="https://pages.github.com">Hosted with GITHub Pages (pages.github.com)</a>
+        </div>
+        <!---->
+    </footer>
+    <!---->
+    
+</body>
+</html>

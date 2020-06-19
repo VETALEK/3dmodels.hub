@@ -1,0 +1,113 @@
+/*Footer template*/
+/*
+    <!--Footer-->
+    <footer>
+        <!---->
+        <div>
+            <a href="./models.html">MODELS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./users.html">USERS</a>
+        </div>
+        <!---->
+        <div>
+            <a href="./index.html">HOME</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://gmail.com">
+            <img src="https://image.flaticon.com/icons/svg/893/893257.svg">
+            </a>
+            <a href="https://gmail.com">FAQ and support (GMail)</a>
+        </div>
+        <!---->
+        <div class="footer_block_triple">
+            <a href="./index.html">© 2020-2021 Avdeenko Vitaliy CS-17 ALL RIGHTS RESERVED (EULA)</a>
+        </div>
+        <!---->
+        <div class="footer_block_with_image">
+            <a href="https://pages.github.com">
+            <img src="https://image.flaticon.com/icons/svg/733/733553.svg">
+            </a>
+            <a href="https://pages.github.com">Hosted with GITHub Pages (pages.github.com)</a>
+        </div>
+        <!---->
+    </footer>
+    <!---->
+*/
+
+footer
+{
+    position: absolute;
+    bottom: calc(-10vh - 1rem);
+
+    width: 100vw;
+    height: 10vh;
+    
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr) 3fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    border-top: solid .2rem var(--dark);
+}
+
+footer>div
+{
+    position: relative;
+    overflow: hidden;
+    
+    margin: 0;
+    padding: 0 0rem 0 2rem;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+footer>div.footer_block_triple
+{
+    padding-left: 14%;
+    justify-items: left;
+    grid-column: 1/4;
+}
+
+footer>div.footer_block_with_image
+{
+    padding-right: 0;
+
+    grid-template-columns: 1fr 15fr;
+    column-gap: 0;
+    justify-items: left;
+}
+
+footer a
+{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    background-color: var(--dark);
+    color: var(--light);
+
+    padding: 0 2% 0 2%;
+
+    border-radius: .25rem;
+
+    transition-duration: 500ms;
+}
+
+footer img
+{
+    height: 3.5vh;
+    transition-duration: 300ms;
+}
+
+footer img:hover
+{
+    height: 4vh;
+    transition-duration: 300ms;
+}
